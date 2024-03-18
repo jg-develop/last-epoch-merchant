@@ -1,45 +1,35 @@
 <template>
-  <div id="app">
-    <header>
-      <nav>
-        <router-link to="/">Home</router-link>
-        <router-link to="/market">Market</router-link>
-      </nav>
-    </header>
-    <!-- This is where the current view will be rendered, based on the route -->
+  <div class="canvas bg-dark">
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+      <div class="container">
+        <router-link class="navbar-brand" to="/"></router-link>
+        <!-- <router-link class="nav-link" to="/market">Market</router-link> -->
+      </div>
+    </nav>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App',
+  name: 'App'
 };
 </script>
 
-<style>
-/* Basic styling */
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<style scoped>
+.canvas {
+  height: 100vh;
 }
 
-header {
-  background-color: #f0f0f0;
-  padding: 20px;
+.navbar {
+  padding: 16px 0px;
 }
 
-nav a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: #42b983;
-}
-
-nav a.router-link-exact-active {
-  font-weight: bold;
-  color: #333;
+.navbar-brand {
+  background-image: url('assets/brand.webp');
+  background-size: contain;
+  height: 25px;
+  width: 110px;
+  background-repeat: no-repeat;
 }
 </style>
