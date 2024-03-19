@@ -3,7 +3,6 @@
     <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
       <div class="container">
         <router-link class="navbar-brand" to="/"></router-link>
-        <!-- <router-link class="nav-link" to="/market">Market</router-link> -->
       </div>
     </nav>
     <router-view></router-view>
@@ -18,7 +17,7 @@ export default {
 
 <style scoped>
 .canvas {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .navbar {

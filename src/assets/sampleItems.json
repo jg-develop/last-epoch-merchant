@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Last Steps of the Living",
+    "price": 200000,
+    "lp": 0,
+    "weavers": 10,
+    "slot": "boots",
+    "rarity": "unique"
+  },
+  {
+    "name": "Blade of Infinity",
+    "price": 150000,
+    "lp": 2,
+    "weavers": 16,
+    "slot": "sword",
+    "rarity": "rare"
+  }
+]

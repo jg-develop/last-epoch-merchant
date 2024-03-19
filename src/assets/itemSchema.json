@@ -1,0 +1,59 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "required": [
+        "name",
+        "price",
+        "lp",
+        "weavers",
+        "slot",
+        "rarity"
+    ],
+    "properties": {
+        "name": {
+            "type": "string",
+            "default": ""
+        },
+        "price": {
+            "type": "integer",
+            "default": 0
+        },
+        "lp": {
+            "type": "integer",
+            "default": 0,
+            "maximum": 4
+        },
+        "weavers": {
+            "type": "integer",
+            "default": 0,
+            "minimum": 5,
+            "maximum": 28
+        },
+        "slot": {
+            "type": "string",
+            "default": "",
+            "oneOf": [
+                {"const": "amulet"},
+                {"const": "axe"},
+                {"const": "belt"},
+                {"const": "boots"},
+                {"const": "bow"},
+                {"const": "chest"},
+                {"const": "gloves"},
+                {"const": "helmet"},
+                {"const": "relic"},
+                {"const": "ring"},
+                {"const": "shield"},
+                {"const": "staff"},
+                {"const": "sword"},
+                {"const": "wand"}
+            ]
+        },
+        "rarity": {
+            "type": "string",
+            "default": ""
+        }
+    }
+}
