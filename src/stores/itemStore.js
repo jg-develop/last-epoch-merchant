@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia';
-import sampleItems from '@/assets/sampleItems.json';
+import sampleItems from '@/assets/data/sampleItems.json';
 
 export const useItemStore = defineStore('itemStore', {
     state: () => ({
@@ -26,6 +26,7 @@ export const useItemStore = defineStore('itemStore', {
             this.filters[filterName] = value;
         },
         fetchItems() {
+            //TODO: Replace with firebase DB
             this.items = sampleItems;
         }
     }

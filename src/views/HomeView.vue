@@ -1,6 +1,11 @@
 <template>
   <div class="container">
     <div class="row">
+      <div class="col-12">
+        <ItemFilterButton />
+      </div>
+    </div>
+    <div class="row">
       <div class="col-12 overflow-auto">
         <ItemTable />
       </div>
@@ -10,7 +15,6 @@
 
 <script>
 import ItemTable from '@/components/ItemTable.vue';
-
 export default {
   name: 'HomeView',
   components: {

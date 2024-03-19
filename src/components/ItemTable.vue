@@ -28,10 +28,7 @@ import { computed } from 'vue';
 import { useItemStore } from '@/stores/itemStore';
 
 const itemStore = useItemStore();
-
-// Fetch items when the component is created/mounted
 itemStore.fetchItems();
-console.log(itemStore);
 
 const filteredItems = computed(() => itemStore.filteredItems);
 </script>
