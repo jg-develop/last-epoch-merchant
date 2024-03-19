@@ -26,7 +26,6 @@ export const useItemStore = defineStore('itemStore', {
             this.filters[filterName] = value;
         },
         fetchItems() {
-            //console.log(sampleItems);
             this.items = sampleItems;
         }
     }
