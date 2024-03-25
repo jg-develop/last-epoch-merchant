@@ -1,8 +1,21 @@
+<script>
+import ItemTable from '@/components/ItemTable.vue';
+import ItemFilters from '@/components/ItemFilters.vue';
+
+export default {
+  name: 'HomeView',
+  components: {
+    ItemTable,
+    ItemFilters
+  }
+};
+</script>
+
 <template>
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <ItemFilterButton />
+        <ItemFilters />
       </div>
     </div>
     <div class="row">
@@ -12,13 +25,3 @@
     </div>
   </div>
 </template>
-
-<script>
-import ItemTable from '@/components/ItemTable.vue';
-export default {
-  name: 'HomeView',
-  components: {
-    ItemTable
-  }
-};
-</script>

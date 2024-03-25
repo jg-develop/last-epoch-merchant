@@ -1,3 +1,13 @@
+<script setup>
+import { computed } from 'vue';
+import { useItemStore } from '@/stores/itemStore';
+
+const itemStore = useItemStore();
+itemStore.fetchItems();
+
+const filteredItems = computed(() => itemStore.filteredItems);
+</script>
+
 <template>
     <table class="table table-sm table-hover table-striped">
         <thead>
@@ -22,16 +32,6 @@
         </tbody>
     </table>
 </template>
-
-<script setup>
-import { computed } from 'vue';
-import { useItemStore } from '@/stores/itemStore';
-
-const itemStore = useItemStore();
-itemStore.fetchItems();
-
-const filteredItems = computed(() => itemStore.filteredItems);
-</script>
 
 <style>
 table {
