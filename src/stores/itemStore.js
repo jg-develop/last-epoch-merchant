@@ -32,6 +32,7 @@ export const useItemStore = defineStore('itemStore', {
             } else {
                 this.filters.slot.splice(index, 1);
             }
+            console.log(this.filters);
         },
         async fetchItems() {
 

@@ -1,3 +1,13 @@
+<template>
+  <div>
+    <FilterButton
+      v-for="slot in slotTypes"
+      :key="slot"
+      :slotType="slot"
+    />
+  </div>
+</template>
+
 <script>
 import FilterButton from '@/components/FilterButton.vue';
 
@@ -13,14 +23,3 @@ export default {
   }
 };
 </script>
-
-<template>
-  <div>
-    <FilterButton
-      v-for="slot in slotTypes"
-      :key="slot"
-      :slotType="slot"
-      iconName="icon-name-for-slot"
-    />
-  </div>
-</template>
